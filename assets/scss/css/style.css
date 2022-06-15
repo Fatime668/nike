@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .header-top {
+  height: 40px;
+  background-color: whitesmoke;
+}
+header .header-top .container {
+  height: 100%;
+}
+header .header-top .container .row {
+  height: 100%;
+}
+header .header-top .container .row .navbar i {
+  color: #000;
+}
+header .header-top .container .row ul {
+  margin: 0 !important;
+}
+header .header-top .container .row .registration ul li:not(:last-child)::after {
+  content: "|";
+  position: relative;
+  left: 13px;
+}
+header .header-bottom .container .row ul {
+  margin: 0;
+}
+header .header-bottom .container .row .search-basket .search input {
+  border-radius: 20px;
+}
+header .header-bottom .container .row .search-basket .basket-wish {
+  display: flex;
+  align-items: center;
+}
+header .header-bottom .container .row .search-basket .basket-wish ul {
+  width: 80px;
+}
+header .header-bottom .container .row .search-basket .basket-wish ul li i {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .basket-wish {
+    display: none !important;
+  }
+
+  .navbar {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .registration ul li {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .registration ul li a {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
